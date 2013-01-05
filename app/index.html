@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" ng-app="application">
+<head>
+  <meta charset="utf-8">
+  <title>Angular Seedling</title>
+  <link rel="stylesheet" href="css/foundation/foundation.min.css"/>
+  <link rel="stylesheet" href="css/application.css"/>
+</head>
+<body>
+	<div class="row">
+		<div class="twelve columns">
+		 	<nav>
+				<ng-include src="'partials/menu-partial.html'"/>
+		 	</nav>
+		</div>
+		<div class="twelve columns">
+  			<ng-view/>
+  		</div>
+  </div>
+  
+  <!-- Angular JS -->
+  <script src="lib/angular/angular.js"></script>
+
+  <!-- JQuery JS -->
+  <script src="lib/jquery/jquery-1.8.3.min.js"></script>
+
+  <!-- Foundation JS -->
+  <script src="lib/foundation/foundation.min.js"></script>
+  <script src="lib/foundation/modernizr.foundation.js"></script>
+  <script src="lib/foundation/app.js"></script>
+
+  <!-- Application JS -->
+  <script src="js/application/application.js"></script>
+  <script src="js/application/configuration-constants.js"></script>
+  <script src="js/menu/menu-service.js"></script>
+  <script src="js/details/details-controller.js"></script>
+  <script src="js/error/error-controller.js"></script>
+  <script src="js/menu/menu-controller.js"></script>
+  <script src="js/menu/menu-item-directive.js"></script>
+  <script src="js/date-time/to-date-string-filter.js"></script>
+
+</body>
+</html>
